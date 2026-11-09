@@ -17,10 +17,10 @@
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<meta name="apple-mobile-web-app-title" content="My Audio" />
-<link rel="manifest" href='data:application/manifest+json,{"name":"My Audio","short_name":"My Audio","display":"standalone","start_url":".","background_color":"%23faf6f0","theme_color":"%23e4571d","icons":[]}' />
+<meta name="apple-mobile-web-app-title" content="PocketWave" />
+<link rel="manifest" href='data:application/manifest+json,{"name":"PocketWave","short_name":"PocketWave","display":"standalone","start_url":".","background_color":"%23faf6f0","theme_color":"%23e4571d","icons":[]}' />
 <link rel="icon" href="data:," />
-<title>My Audio — Podcasts & Music</title>
+<title>PocketWave — Podcasts & Music</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -268,7 +268,7 @@
   <div class="topbar-inner">
     <div class="topline">
       <div>
-        <h1>My Audio</h1>
+        <h1>PocketWave</h1>
         <p>Your podcasts &amp; music, plus the Adventures in Odyssey episodes below. Add your own with a link, a file, or a screenshot/photo. Your library saves on this phone and is here when you come back.</p>
       </div>
       <div class="top-actions">
@@ -1031,7 +1031,7 @@ var AIO_EPISODES = [[0,1987,"Family Portraits Episode 5: You're Not Gonna Believ
       navigator.mediaSession.metadata = new MediaMetadata({
         title: t.title,
         artist: t.show || (t.type === "podcast" ? "Podcast" : "Music"),
-        album: t.type === "podcast" ? "My Audio — Podcast" : "My Audio — Music",
+        album: t.type === "podcast" ? "PocketWave — Podcast" : "PocketWave — Music",
         artwork: artworkFor(t)
       });
       navigator.mediaSession.setActionHandler("play", function(){ audio.play().catch(function(){}); });
